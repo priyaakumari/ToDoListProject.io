@@ -47,11 +47,11 @@ function showTask(){
     let addedtasklist = document.getElementById("addedtasklist");
     taskObj.forEach((item, idx) => {
         const li=document.createElement('li');
-        if(item.completeStatus==true){
-            taskCompleteValue = `<td class="completed">${item.task_name}</td>`;
-        }else{
-            taskCompleteValue = `<td>${item.task_name}</td>`;
-        }
+//         if(item.completeStatus==true){
+//             taskCompleteValue = `<td class="completed">${item.task_name}</td>`;
+//         }else{
+//             taskCompleteValue = `<td>${item.task_name}</td>`;
+//         }
         
 
             li.innerHTML=`
@@ -70,7 +70,7 @@ function showTask(){
 
 // count total tasks
 function cntTasks(){
-    if(localStorage.localTask) {
+    if(localStorage.getItem("localTask")) {
     var totCnt = JSON.parse(localStorage.localTask).length
 }
 else {
