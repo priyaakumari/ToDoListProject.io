@@ -43,7 +43,7 @@ function showTask(){
     else{
         taskObj = JSON.parse(webtask);
     }
-   listItems.innerHTML="";
+   listItems.innerHTML='';
     let addedtasklist = document.getElementById("addedtasklist");
     taskObj.forEach((item, idx) => {
         const li=document.createElement('li');
