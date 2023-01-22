@@ -70,7 +70,13 @@ function showTask(){
 
 // count total tasks
 function cntTasks(){
-    var totCnt=JSON.parse(localStorage.localTask).length
+    if(localStorage.localTask) {
+    var totCnt = JSON.parse(localStorage.localTask).length
+}
+else {
+    var totCnt = 0;
+}
+
     count.innerText=totCnt;
 }
 
