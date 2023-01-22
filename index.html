@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of the project -->
+    <title>TODO List</title>
+    <!-- adding css file -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- adding font awesome for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <header>
+        <!-- nav or heading of the ToDo -->
+        <nav>
+            <img src="icon.png">
+            <h2>Priya's ToDo List</h2>
+            <!-- <input type="text" placeholder="Search..." id="searchtextbox"> -->
+        </nav>
+        <!-- end of nav -->
+    </header>
+    <div id="container">
+        <h1>Add ToDo's</h1>
+
+        <div id="box">
+            <!-- write your task and some buttons like add, save, delete -->
+            <div id="write-task">
+                <div>
+                <input type="text" placeholder="Add your todo's..." id="taskInput">
+                <input type="hidden" id="saveindex">
+            </div>
+                <span>
+                <button id="addTaskbtn" style="display: inline;">Add Task</button>
+                <button id="saveTaskbtn" style="display: none;">Save Task</button>
+                <button id="deleteAllTaskbtn" style="display: inline;">Delete All</button>
+                </span>
+                <br>
+                <span id="tot">Total Tasks:</span><span id="cnt" style="font-weight: bold; ">0</span>
+            </div>
+            <!-- the todo list items -->
+            <div id="todo-inner">
+                 <ul id="listItems">
+                    <!-- <li style="list-style-type:none">
+                        <input type="checkbox">
+                        <i>Homework</i>
+                        <button >Edit</button>
+                        <button >Delete</button>
+                    </li> -->
+                </ul> 
+            </div>
+
+        </div>
+    </div>
+    <!-- javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
